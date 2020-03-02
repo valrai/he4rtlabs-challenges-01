@@ -3,13 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Freela - He4rtDevs</title>
+    <title>Freelance Calculator - He4rtDevs</title>
+    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
+    <section title="Body Title">
+      <img src="./resources/hearthdev.jpg" alt="He4rtDevs" id="hearth-icon">
+      <h1>Freelance Calculator</h1>
+      <p class="subtitle">Calculate the value of the hour worked on freelance projects</p>
+    </section>  
+    <section title="Informative Cards">      
+        <img src="./resources/purple-background.jpg" alt="purple background" id="purple-background">     
+      <div class="info-panel info-panel-1">
+        <h4>Project value</h4>
+        <p>The total value of the project in your currency.</p>
+      </div>
+      <div class="info-panel info-panel-2">
+        <h4>Number of worked hours</h4>
+        <p>The number of hours per day used to develop the project.</p>
+      </div>
+      <div class="info-panel info-panel-3">
+        <h4>Number of worked days</h4>
+        <p>The number of days per week used to develop the project.</p>
+      </div>
+      <div class="info-panel info-panel-4">
+        <h4>Number of rest days</h4>
+        <p>The number of days per week used to rest.</p>
+      </div>
+    </section>
+    <main>
+      <section title="Calculator">
+        <div class="form-panel" id="form-div">
+          <form id="form" onsubmit="SubmitHandler(event)">
+            <label for="projectValue">
+              <span>Project value</span>
+              <input type="number" step="0.01" value="0" id="projectValue" class="valueIcon" oninput="InputHandler(event)"/>
+              <span id="validationMessage-projectValue" class="span-validation-message" hidden></span> 
+            </label>
+            <label for="workedHours">
+              <span>Number of hours worked per day</span>
+              <input type="number" id="workedHours" value="0" oninput="InputHandler(event)"/>
+              <span id="validationMessage-workedHours" class="span-validation-message" hidden></span> 
+            </label>  
+            <label for="workedDays">
+              <span>Working days in the week</span>
+              <input type="number" id="workedDays" value="0" oninput="InputHandler(event)"/>
+              <span id="validationMessage-workedDays" class="span-validation-message" hidden></span> 
+            </label>
+            <label for="restDays">
+              <span>Rest days in the week</span>
+              <input type="number" id="restDays" value="0" oninput="InputHandler(event)"/>
+              <span id="validationMessage-restDays" class="span-validation-message" hidden></span> 
+            </label>
+            <span class="submitBtn-Span">
+              <button type="submit" class="btn" id="calculateBtn">Calculate</button>
+            </span>
+          </form>
+        </div>
+        <div class="result-panel" id="result-panel" style="display: none;">
+        </div>
+      </section>
+    </main>
     <script src="./main.js"></script>
   </body>
 </html>

@@ -1,0 +1,233 @@
+body{
+  background-color: blueviolet;
+}
+
+section[title="Informative Cards"]{
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+}
+
+section[title="Calculator"]{
+  width: 40%;
+  height: 100%;
+  bottom: 40%;
+  position: absolute;
+  right: 0;
+}
+
+section[title="Body Title"]{
+  width: 60%;
+  height: 20%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+p{
+  margin: 3%;
+  font-size: 1.3vw;
+}
+
+h1{
+  position: absolute;
+  top: 5%;
+  left: 22%;
+  text-shadow: 5px 5px 5px rgb(37, 1, 66);
+  font-size: 3.5vw;
+  color: #ffffff;
+}
+
+form{
+  margin: 0;
+  align-content: center;
+}
+
+label {
+  display: block;
+  position: relative;
+  margin: 1%;
+  margin-top: 5%;
+  width: 98%;
+  height: 80%;
+  text-align: center;
+  font-size: 1.7vw;
+  font-family: 'Concert One';
+}
+
+input:focus{
+  outline: none;
+}
+
+
+input{
+  position: relative;
+  width: 100%;
+  height: 3vw;
+  margin-top: 4%;
+  margin-bottom: 0.5%;
+  border-radius: 20px;
+  border: 3px;
+  border-style: solid;  
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  border-color: blueviolet;
+  /* border-top: none;
+  border-left: none;
+  border-right: none; */
+}
+
+
+.form-panel {
+  display: block;
+  background: #ffffff;
+  position: relative;
+  border-radius: 10%;
+  height: auto;
+  margin: 5%;
+  margin-right: 8%;
+  padding: 3%;
+  top: 50%;
+  box-shadow: 5px 5px 5px black;
+}
+
+.result-panel{
+  display: block;
+  background: #ffffff;
+  position: relative;
+  border-radius: 5%;
+  margin: 7%;
+  margin-left: 10%;
+  top: 65%;
+  padding: 3%;
+  padding-top: 8%;
+  padding-bottom: 10%;
+  box-shadow: 5px 5px 5px black;
+} 
+
+.info-panel{
+  display: inline-block;
+  background: #ffffff;
+  position: absolute;
+  width: 30%;
+  margin: 10%;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 15%;
+  text-align: center;
+  font-family: 'Lato', serif;
+  font-size: 1.4vw;
+  transition: transform .2s;
+  padding: 1%;
+}
+
+.info-panel:hover {
+  transform: scale(1.2); 
+}
+
+.info-panel-1{
+  top: 35vw;
+}
+
+.info-panel-2{
+  top: 35vw;
+  left: 45%;
+}
+
+.info-panel-3{
+  top: 30vh;
+  left: 45%;
+}
+
+.info-panel-4{
+  top: 30vh;
+  position: relative;
+}
+
+.input-invalid{
+  border-color: red;
+}
+
+.btn{
+  display: block;
+  position: relative;
+  background-color: rgb(89, 6, 165);
+  color: #ffffff;
+  border: black;
+  border: 2px;
+  border-radius: 25px;
+  height: 1%;
+  width: 45%;
+  font-family: 'Poppins', serif;
+  text-align: center;
+  font-size: 2vw;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px black;
+  transition: transform .2s;
+  margin-left: 27%;
+  margin-top: 14%;
+  margin-bottom: 5%;
+}
+.submitBtn-Span{
+  position: relative;
+  height: 50px;
+}
+
+#hearth-icon{
+  position: absolute;
+  left: 10%;
+  top: 6vh;
+  border-radius: 50%;
+  width: 10%;
+}
+
+.valueIcon{
+  background-image: url(resources/price.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  overflow: hidden;
+  background-size: 9%;
+  background-position-y: 40%;
+}
+
+
+#calculateBtn:hover{
+  transform: scale(1.05);
+}
+
+#calculateBtn:focus{
+  outline: none;
+}
+
+.span-validation-message{
+  font-family: 'Karla';
+  font-size: 1.1vw;
+  margin-top: 0;
+}
+
+#purple-background{
+  position: absolute;
+  border-radius: 50%;
+  width: 60%;
+  left: 19%;
+  top: 35vh;
+  max-block-size: initial;
+  opacity: 20%;
+}
+
+.subtitle{
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-top: 18%;
+}
+
+.git-icon{
+  position: relative;
+  margin-top: 28%;
+  left: 27%;
+  width: 5vw;
+}
+  
